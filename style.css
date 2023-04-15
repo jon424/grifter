@@ -89,7 +89,8 @@ p {
 
 .container,
 #about,
-#music, #contact
+#music, #contact,
+#performances
 /* #performances,
 #contact  */ {
   align-items: center;
