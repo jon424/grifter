@@ -28,19 +28,18 @@
         <li>Contact</li>
       </ul>
       <hr />
-
-      </div>
     </div>
+
     <div id="about">
-        <h2>About</h2>
-        <p>
-          Grifter is an instrumental duo from Detroit, consisting of Evan
-          Nistor (guitar/keyboard/samples) and Jon Jackson (drums/marimba),
-          whose music is a psychedelic, experimental, improvisational, spacey,
-          and grooving fusion of rock and jazz that pushes the boundaries of
-          what's possible in instrumental music.
-        </p>
-      </div>
+      <h2>About</h2>
+      <p>
+        Grifter is an instrumental duo from Detroit, consisting of Evan Nistor
+        (guitar/keyboard/samples) and Jon Jackson (drums/marimba), whose music
+        is a psychedelic, experimental, improvisational, spacey, and grooving
+        fusion of rock and jazz that pushes the boundaries of what's possible in
+        instrumental music.
+      </p>
+    </div>
     <div id="music">
       <h2>Music</h2>
       <iframe
@@ -81,59 +80,71 @@
     <div id="performances">
       <h2>Performances</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-        justo et libero aliquet, ac blandit sapien volutpat. Sed tincidunt
-        lobortis erat, quis malesuada quam faucibus ac. Morbi vestibulum turpis
-        et nibh vestibulum vehicula. Aliquam eget nunc quis mi pulvinar aliquam.
+        Evan Nistor - Guitar and synths<br />
+        Jon Jackson - Drums<br />
+        Mixed by EDB at EDB Studios<br />
+        Artwork by Evan Nistor
       </p>
     </div>
-    <div id="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a></p>
-      <p><a href="https://www.youtube.com/@GrifterTheBand">YouTube</a></p>
-      <p><a href="https://griftertheband.bandcamp.com/">Bandcamp</a></p>
+    <div class="performances-contact-container">
+      <div id="performances">
+        <h2>Performances</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+          justo et libero aliquet, ac blandit sapien volutpat. Sed tincidunt
+          lobortis erat, quis malesuada quam faucibus ac. Morbi vestibulum
+          turpis et nibh vestibulum vehicula. Aliquam eget nunc quis mi pulvinar
+          aliquam.
+        </p>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a>
+        </p>
+        <p><a href="https://www.youtube.com/@GrifterTheBand">YouTube</a></p>
+        <p><a href="https://griftertheband.bandcamp.com/">Bandcamp</a></p>
+      </div>
     </div>
-</div>
-<!-- ============================================= -->
-<section class="upcoming-performances">
-    <h2>Upcoming Performances</h2>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Venue</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>5-12-2023</td>
-            <td>8:00 PM</td>
-            <td>The Fillmore</td>
-            <td>Detroit, MI</td>
-          </tr>
-          <tr>
-            <td>6-15-2023</td>
-            <td>7:30 PM</td>
-            <td>Museum of Contemporary Art Detroit</td>
-            <td>Detroit, MI</td>
-          </tr>
-          <tr>
-            <td>7-20-2023</td>
-            <td>9:00 PM</td>
-            <td>Trinosophes</td>
-            <td>Detroit, MI</td>
-          </tr>
-          <!-- add more rows as needed -->
-        </tbody>
-      </table>
-    </div>
-  </section>
-  
-<!-- ============================================= -->
-</div>
+    <!-- ============================================= -->
+    <section class="upcoming-performances">
+      <h2>Upcoming Performances</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Venue</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5-12-2023</td>
+              <td>8:00 PM</td>
+              <td>The Fillmore</td>
+              <td>Detroit, MI</td>
+            </tr>
+            <tr>
+              <td>6-15-2023</td>
+              <td>7:30 PM</td>
+              <td>Museum of Contemporary Art Detroit</td>
+              <td>Detroit, MI</td>
+            </tr>
+            <tr>
+              <td>7-20-2023</td>
+              <td>9:00 PM</td>
+              <td>Trinosophes</td>
+              <td>Detroit, MI</td>
+            </tr>
+            <!-- add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
   </body>
   <script>
     const originalTitle = document.title;
@@ -157,15 +168,14 @@
     });
 
     // select the table element
-const table = document.querySelector('table');
+    const table = document.querySelector("table");
 
-// add a scroll event listener to the table element
-table.addEventListener('scroll', function() {
-  // get the scrollLeft value of the table element
-  const scrollLeft = table.scrollLeft;
-  // set the left position of the thead element to the negative scrollLeft value
-  table.querySelector('thead').style.left = `-${scrollLeft}px`;
-});
-
+    // add a scroll event listener to the table element
+    table.addEventListener("scroll", function () {
+      // get the scrollLeft value of the table element
+      const scrollLeft = table.scrollLeft;
+      // set the left position of the thead element to the negative scrollLeft value
+      table.querySelector("thead").style.left = `-${scrollLeft}px`;
+    });
   </script>
 </html>
