@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shrikhand"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>GRIFTER</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <h1 class="glow-effect">Grifter</h1>
+      <ul class="nav">
+        <li>About</li>
+        <li>Music</li>
+        <li>Performances</li>
+        <li>Contact</li>
+      </ul>
+      <hr />
+
+      </div>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+          Grifter is an instrumental duo from Detroit, consisting of Evan
+          Nistor (guitar/keyboard/samples) and Jon Jackson (drums/marimba),
+          whose music is a psychedelic, experimental, improvisational, spacey,
+          and grooving fusion of rock and jazz that pushes the boundaries of
+          what's possible in instrumental music.
+        </p>
+      </div>
+    <div id="music">
+      <h2>Music</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/hIklxtFCbOM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Evan Nistor - Guitar and synths<br />
+        Jon Jackson - Drums<br />
+        Mixed by EDB at EDB Studios<br />
+        Artwork by Evan Nistor
+      </p>
+    </div>
+    <div class="performances-contact-container">
+    <div id="performances">
+      <h2>Performances</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+        justo et libero aliquet, ac blandit sapien volutpat. Sed tincidunt
+        lobortis erat, quis malesuada quam faucibus ac. Morbi vestibulum turpis
+        et nibh vestibulum vehicula. Aliquam eget nunc quis mi pulvinar aliquam.
+      </p>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a></p>
+      <p><a href="https://www.youtube.com/@GrifterTheBand">YouTube</a></p>
+      <p><a href="https://griftertheband.bandcamp.com/">Bandcamp</a></p>
+    </div>
+</div>
+<!-- ============================================= -->
+<section class="upcoming-performances">
+    <h2>Upcoming Performances</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5-12-2023</td>
+            <td>8:00 PM</td>
+            <td>The Fillmore</td>
+            <td>Detroit, MI</td>
+          </tr>
+          <tr>
+            <td>6-15-2023</td>
+            <td>7:30 PM</td>
+            <td>Museum of Contemporary Art Detroit</td>
+            <td>Detroit, MI</td>
+          </tr>
+          <tr>
+            <td>7-20-2023</td>
+            <td>9:00 PM</td>
+            <td>Trinosophes</td>
+            <td>Detroit, MI</td>
+          </tr>
+          <!-- add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+<!-- ============================================= -->
+</div>
+  </body>
+  <script>
+    const originalTitle = document.title;
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        document.title = "G R I F T E R";
+      } else {
+        document.title = originalTitle;
+      }
+    });
+
+    const navLinks = document.querySelectorAll(".nav li");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetId = event.target.innerText.toLowerCase();
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // select the table element
+const table = document.querySelector('table');
+
+// add a scroll event listener to the table element
+table.addEventListener('scroll', function() {
+  // get the scrollLeft value of the table element
+  const scrollLeft = table.scrollLeft;
+  // set the left position of the thead element to the negative scrollLeft value
+  table.querySelector('thead').style.left = `-${scrollLeft}px`;
+});
+
+  </script>
+</html>
