@@ -23,6 +23,7 @@ body::before {
 }
 
 .body-wrap {
+  padding: 0 6px;
   overflow-x: hidden;
 }
 
@@ -253,7 +254,7 @@ td > a {
 
 /* Apply animation to the h1 element */
 .glow-effect {
-  padding: 0 6px 0 6px;
+  /* padding: 0 6px 0 6px; */
   animation: glow 3s infinite alternate;
   color: #e4ddd7;
   text-align: center;
