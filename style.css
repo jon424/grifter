@@ -50,6 +50,7 @@ p {
   color: snow;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
   font-family: "Lora";
+  /* font-family: "Open Sans"; */
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0;
@@ -157,6 +158,7 @@ td {
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
+  font-family: "Lora";
 }
 
 th:first-child,
