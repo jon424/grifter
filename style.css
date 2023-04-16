@@ -177,8 +177,9 @@ td > a {
   }
 
   h1 {
+    border: 1px solid red;
     font-size: 6rem;
-    padding: 0 2px 0 2px;
+    padding: 0 6px 0 6px;
   }
 
   h2 {
