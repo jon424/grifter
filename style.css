@@ -258,8 +258,7 @@ td > a {
   color: #e4ddd7;
   text-align: center;
   margin-bottom: 0;
-  text-rendering: optimizeLegibility;
-
+  /* text-rendering: optimizeLegibility; */
   text-stroke: 2px black;
-  -webkit-text-stroke: 2px black;
+  /* -webkit-text-stroke: 2px black; */
 }
