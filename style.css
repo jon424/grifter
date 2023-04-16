@@ -249,7 +249,7 @@ td > a {
   border: 1px solid green;
   padding: 0 6px 0 6px;
   animation: glow 3s infinite alternate;
-  /* text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000; */
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
   color: #e4ddd7;
   text-align: center;
   margin-bottom: 0;
