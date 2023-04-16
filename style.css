@@ -248,16 +248,13 @@ td > a {
 
 /* Apply animation to the h1 element */
 .glow-effect {
-  border: 1px solid green;
   padding: 0 6px 0 6px;
-  animation: glow 3s infinite alternate;
-  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+  /* animation: glow 3s infinite alternate; */
   color: #e4ddd7;
   text-align: center;
   margin-bottom: 0;
   text-rendering: optimizeLegibility;
-}
 
-.background {
-  animation: glow 3s infinite alternate;
+  text-stroke: 2px black;
+  -webkit-text-stroke: 2px black;
 }
