@@ -223,9 +223,10 @@ td > a {
   }
 
   .mobile-title {
-    border: 1px solid pink;
+    border: 1px solid black;
     display: block;
     /* padding: 0 6px 0 6px; */
+    padding: 0;
 
     /* max-width: max-content; */
     color: #e4ddd7;
