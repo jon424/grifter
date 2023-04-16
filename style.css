@@ -223,6 +223,7 @@ td > a {
   }
 
   .mobile-title {
+    animation: glow 3s infinite alternate;
     border: 1px solid orange;
     display: block;
     /* padding: 0 6px 0 6px; */
@@ -235,7 +236,7 @@ td > a {
     /* margin-bottom: 0; */
     /* text-rendering: optimizeLegibility; */
     /* text-stroke: 2px black; */
-    /* -webkit-text-stroke: 2px black; */
+    -webkit-text-stroke: 2px black;
   }
 
   .upcoming-performances {
