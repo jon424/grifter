@@ -23,7 +23,7 @@ body::before {
 }
 
 .body-wrap {
-  padding: 0 6px;
+  /* padding: 0 6px; */
   overflow-x: hidden;
 }
 
@@ -218,9 +218,8 @@ td > a {
     margin: 1rem 0;
   }
 
-  /* Apply animation to the h1 element */
   .glow-effect {
-    display: none;
+    /* display: none; */
   }
 
   .mobile-title {
