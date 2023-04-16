@@ -285,3 +285,20 @@ td > a {
     -webkit-text-stroke: 2px #000;
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.55s ease-in-out;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

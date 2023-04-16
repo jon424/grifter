@@ -16,7 +16,7 @@
     <title>GRIFTER</title>
   </head>
   <body>
-    <div class="body-wrap">
+    <div class="body-wrap fade-in">
       <!-- <h1 class="glow-effect">GRIFTER</h1> -->
       <h1>GRIFTER</h1>
       <ul class="nav">
@@ -33,7 +33,7 @@
       </ul>
     </div>
     <div>
-      <div id="about">
+      <div id="about" class="fade-in">
         <p>
           Grifter is an instrumental duo from Detroit, Michigan consisting of
           Evan Nistor (guitar/keyboard/samples) and Jon Jackson (drums/marimba),
@@ -43,8 +43,9 @@
         </p>
       </div>
       <div id="music">
-        <h2>Music</h2>
+        <h2 class="fade-in">Music</h2>
         <iframe
+          class="fade-in"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/hIklxtFCbOM"
@@ -53,9 +54,9 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <p>"Lullabye"</p>
-        <br class="desktop-only-break" />
-        <p>
+        <p class="fade-in">"Lullabye"</p>
+        <br class="desktop-only-break fade-in" />
+        <p class="fade-in">
           Evan Nistor - Guitar and synths<br />
           Jon Jackson - Drums<br />
           Mixed by EDB at EDB Studios<br />
@@ -65,6 +66,7 @@
         <br />
         <br />
         <iframe
+          class="fade-in"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/cI3Ik0ahCjU"
@@ -73,9 +75,9 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <p>"Music of the Night"</p>
-        <br class="desktop-only-break" />
-        <p>
+        <p class="fade-in">"Music of the Night"</p>
+        <br class="desktop-only-break fade-in" />
+        <p class="fade-in">
           Evan Nistor - Guitar and synths<br />
           Jon Jackson - Drums<br />
           Mixed by EDB at EDB Studios<br />
@@ -83,7 +85,7 @@
         </p>
       </div>
       <hr />
-      <section class="upcoming-performances" id="performances">
+      <section class="upcoming-performances fade-in" id="performances">
         <h2>Upcoming Performances</h2>
         <div class="table-wrapper">
           <table>
@@ -131,7 +133,7 @@
           </table>
         </div>
       </section>
-      <div id="contact">
+      <div id="contact" class="fade-in">
         <h2>Contact</h2>
         <p>
           <a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a>
@@ -167,6 +169,33 @@
       const scrollLeft = table.scrollLeft;
       // set the left position of the thead element to the negative scrollLeft value
       table.querySelector("thead").style.left = `-${scrollLeft}px`;
+    });
+
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    const fadeInOptions = {
+      rootMargin: "0px",
+      threshold: 0.25,
+    };
+
+    const fadeInObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+          fadeInObserver.unobserve(entry.target);
+        }
+      });
+    },
+    fadeInOptions);
+
+    fadeIns.forEach((fadeIn) => {
+      fadeInObserver.observe(fadeIn);
     });
   </script>
 </html>
