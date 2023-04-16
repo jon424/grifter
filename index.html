@@ -27,67 +27,108 @@
         <li>Performances</li>
         <li>Contact</li>
       </ul>
-      <hr />
+      <ul class="mobile-nav">
+        <li>About</li>
+        <li>Music</li>
+        <li>Performances</li>
+        <li>Contact</li>
+      </ul>
     </div>
-
-    <div id="about">
-      <h2>About</h2>
-      <p>
-        Grifter is an instrumental duo from Detroit, consisting of Evan Nistor
-        (guitar/keyboard/samples) and Jon Jackson (drums/marimba), whose music
-        is a psychedelic, experimental, improvisational, spacey, and grooving
-        fusion of rock and jazz that pushes the boundaries of what's possible in
-        instrumental music.
-      </p>
-    </div>
-    <div id="music">
-      <h2>Music</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/hIklxtFCbOM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Evan Nistor - Guitar and synths<br />
-        Jon Jackson - Drums<br />
-        Mixed by EDB at EDB Studios<br />
-        Artwork by Evan Nistor
-      </p>
-      <br />
-      <br />
-      <br />
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/cI3Ik0ahCjU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Evan Nistor - Guitar and synths<br />
-        Jon Jackson - Drums<br />
-        Mixed by EDB at EDB Studios<br />
-        Artwork by Evan Nistor
-      </p>
-    </div>
-
-    <!-- <div class="performances-contact-container">
-      <div id="performances">
-        <h2>Performances</h2>
+    <div class="container">
+      <div id="about">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-          justo et libero aliquet, ac blandit sapien volutpat. Sed tincidunt
-          lobortis erat, quis malesuada quam faucibus ac. Morbi vestibulum
-          turpis et nibh vestibulum vehicula. Aliquam eget nunc quis mi pulvinar
-          aliquam.
+          Grifter is an instrumental duo from Detroit, consisting of Evan Nistor
+          (guitar/keyboard/samples) and Jon Jackson (drums/marimba), whose music
+          is a psychedelic, experimental, improvisational, spacey, and grooving
+          fusion of rock and jazz that pushes the boundaries of what's possible
+          in instrumental music.
         </p>
       </div>
+      <div id="music">
+        <h2>Music</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hIklxtFCbOM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Evan Nistor - Guitar and synths<br />
+          Jon Jackson - Drums<br />
+          Mixed by EDB at EDB Studios<br />
+          Artwork by Evan Nistor
+        </p>
+        <br />
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cI3Ik0ahCjU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Evan Nistor - Guitar and synths<br />
+          Jon Jackson - Drums<br />
+          Mixed by EDB at EDB Studios<br />
+          Artwork by Evan Nistor
+        </p>
+      </div>
+      <hr />
+      <section class="upcoming-performances" id="performances">
+        <h2>Upcoming Performances</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Venue</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5-12-2023</td>
+                <td>8:00 PM</td>
+                <td>
+                  <a href="https://cranbrookartmuseum.org/" target="_blank"
+                    >Cranbrook Art Museum</a
+                  >
+                </td>
+                <td>Bloomfield Hills, MI</td>
+              </tr>
+              <tr>
+                <td>6-15-2023</td>
+                <td>7:30 PM</td>
+                <td>
+                  <a href="https://mocadetroit.org/" target="_blank"
+                    >Museum of Contemporary Art Detroit</a
+                  >
+                </td>
+                <td>Detroit, MI</td>
+              </tr>
+              <tr>
+                <td>7-20-2023</td>
+                <td>9:00 PM</td>
+                <td>
+                  <a href="https://trinosophes.com/" target="_blank"
+                    >Trinosophes</a
+                  >
+                </td>
+                <td>Detroit, MI</td>
+              </tr>
+              <!-- add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </section>
       <div id="contact">
         <h2>Contact</h2>
         <p>
@@ -95,67 +136,8 @@
         </p>
         <p><a href="https://www.youtube.com/@GrifterTheBand">YouTube</a></p>
         <p><a href="https://griftertheband.bandcamp.com/">Bandcamp</a></p>
-      </div> 
-    </div> -->
-    <!-- ============================================= -->
-    <section class="upcoming-performances" id="performances">
-      <h2>Upcoming Performances</h2>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Venue</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>5-12-2023</td>
-              <td>8:00 PM</td>
-              <td>
-                <a href="https://cranbrookartmuseum.org/" target="_blank"
-                  >Cranbrook Art Museum</a
-                >
-              </td>
-              <td>Bloomfield Hills, MI</td>
-            </tr>
-            <tr>
-              <td>6-15-2023</td>
-              <td>7:30 PM</td>
-              <td>
-                <a href="https://mocadetroit.org/" target="_blank"
-                  >Museum of Contemporary Art Detroit</a
-                >
-              </td>
-              <td>Detroit, MI</td>
-            </tr>
-            <tr>
-              <td>7-20-2023</td>
-              <td>9:00 PM</td>
-              <td>
-                <a href="https://trinosophes.com/" target="_blank"
-                  >Trinosophes</a
-                >
-              </td>
-              <td>Detroit, MI</td>
-            </tr>
-            <!-- add more rows as needed -->
-          </tbody>
-        </table>
       </div>
-    </section>
-    <div id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a>
-      </p>
-      <p><a href="https://www.youtube.com/@GrifterTheBand">YouTube</a></p>
-      <p><a href="https://griftertheband.bandcamp.com/">Bandcamp</a></p>
     </div>
-
-    <!-- ============================================= -->
   </body>
   <script>
     const originalTitle = document.title;
@@ -166,9 +148,7 @@
         document.title = originalTitle;
       }
     });
-
-    const navLinks = document.querySelectorAll(".nav li");
-
+    const navLinks = document.querySelectorAll(".nav li, .mobile-nav li");
     navLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
         event.preventDefault();
@@ -177,10 +157,8 @@
         targetSection.scrollIntoView({ behavior: "smooth" });
       });
     });
-
     // select the table element
     const table = document.querySelector("table");
-
     // add a scroll event listener to the table element
     table.addEventListener("scroll", function () {
       // get the scrollLeft value of the table element
