@@ -32,6 +32,9 @@ h1 {
   font-family: "Shrikhand";
   text-align: center;
 }
+.mobile-title {
+  display: none;
+}
 
 h2 {
   font-size: 2.75rem;
@@ -164,6 +167,18 @@ td > a {
   display: none;
 }
 
+/* Apply animation to the h1 element */
+.glow-effect {
+  /* padding: 0 6px 0 6px; */
+  animation: glow 3s infinite alternate;
+  color: #e4ddd7;
+  text-align: center;
+  margin-bottom: 0;
+  /* text-rendering: optimizeLegibility; */
+  text-stroke: 2px black;
+  /* -webkit-text-stroke: 2px black; */
+}
+
 @media screen and (max-width: 768px) {
   iframe {
     height: auto;
@@ -203,6 +218,23 @@ td > a {
     margin: 1rem 0;
   }
 
+  /* Apply animation to the h1 element */
+  .glow-effect {
+    display: none;
+  }
+
+  .mobile-title {
+    border: 1px solid yellow;
+    display: block;
+    padding: 0 6px 0 6px;
+    color: #e4ddd7;
+    text-align: center;
+    margin-bottom: 0;
+    /* text-rendering: optimizeLegibility; */
+    text-stroke: 2px black;
+    -webkit-text-stroke: 2px black;
+  }
+
   .upcoming-performances {
     padding: unset;
   }
@@ -222,6 +254,10 @@ td > a {
   td:first-child {
     padding: unset;
   }
+}
+
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Your styles here */
 }
 
 @keyframes glow {
@@ -250,16 +286,4 @@ td > a {
     text-stroke: 2px #000;
     -webkit-text-stroke: 2px #000;
   }
-}
-
-/* Apply animation to the h1 element */
-.glow-effect {
-  /* padding: 0 6px 0 6px; */
-  animation: glow 3s infinite alternate;
-  color: #e4ddd7;
-  text-align: center;
-  margin-bottom: 0;
-  /* text-rendering: optimizeLegibility; */
-  text-stroke: 2px black;
-  /* -webkit-text-stroke: 2px black; */
 }
