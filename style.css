@@ -28,6 +28,7 @@ body::before {
 
 h1 {
   font-size: 12rem;
+  margin-bottom: 0;
   /* font-family: "Shrikhand"; */
   /* font-family: Helvetica; */
   /* font-family: "Oswald"; */
@@ -60,6 +61,7 @@ p {
 
 .nav,
 .mobile-nav {
+  margin-bottom: 0;
   margin-bottom: 32px;
   color: snow;
   display: flex;
@@ -203,6 +205,7 @@ td > a {
   }
 
   h1 {
+    margin-bottom: -26px;
     font-size: 5rem;
   }
 
