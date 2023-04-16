@@ -28,7 +28,9 @@ body::before {
 
 h1 {
   font-size: 12rem;
-  font-family: "Shrikhand";
+  /* font-family: "Shrikhand"; */
+  font-family: Helvetica;
+  font-style: italic;
   text-align: center;
 }
 .mobile-title {
