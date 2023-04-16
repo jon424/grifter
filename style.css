@@ -168,7 +168,7 @@ td > a {
 
 /* Apply animation to the h1 element */
 .glow-effect {
-  animation: glow 3s infinite alternate;
+  /* animation: glow 3s infinite alternate; */
   color: #e4ddd7;
   text-align: center;
   margin-bottom: 0;
