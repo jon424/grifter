@@ -176,13 +176,17 @@ td > a {
 }
 
 @media screen and (max-width: 768px) {
+  .desktop-only-break {
+    display: none;
+  }
+
   iframe {
     height: auto;
     max-width: 320px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #contact p {
