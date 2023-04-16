@@ -178,6 +178,7 @@ td > a {
 
   h1 {
     font-size: 6rem;
+    padding: 0 2px 0 2px;
   }
 
   h2 {
@@ -251,7 +252,7 @@ td > a {
   color: #e4ddd7;
   text-align: center;
   margin-bottom: 0;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
 }
 
 .background {
