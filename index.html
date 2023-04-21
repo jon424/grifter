@@ -22,13 +22,13 @@
       <ul class="nav">
         <li>About</li>
         <li>Music</li>
-        <li>Performances</li>
+        <!-- <li>Performances</li> -->
         <li>Contact</li>
       </ul>
       <ul class="mobile-nav">
         <li>About</li>
         <li>Music</li>
-        <li>Performances</li>
+        <!-- <li>Performances</li> -->
         <li>Contact</li>
       </ul>
     </div>
@@ -85,7 +85,7 @@
         </p>
       </div>
       <hr />
-      <section class="upcoming-performances fade-in" id="performances">
+      <!-- <section class="upcoming-performances fade-in" id="performances">
         <h2>Upcoming Performances</h2>
         <div class="table-wrapper">
           <table>
@@ -128,11 +128,10 @@
                 </td>
                 <td>Detroit, MI</td>
               </tr>
-              <!-- add more rows as needed -->
             </tbody>
           </table>
         </div>
-      </section>
+      </section> -->
       <div id="contact" class="fade-in">
         <h2>Contact</h2>
         <p>
@@ -162,14 +161,14 @@
       });
     });
     // select the table element
-    const table = document.querySelector("table");
-    // add a scroll event listener to the table element
-    table.addEventListener("scroll", function () {
-      // get the scrollLeft value of the table element
-      const scrollLeft = table.scrollLeft;
-      // set the left position of the thead element to the negative scrollLeft value
-      table.querySelector("thead").style.left = `-${scrollLeft}px`;
-    });
+    // const table = document.querySelector("table");
+    // // add a scroll event listener to the table element
+    // table.addEventListener("scroll", function () {
+    //   // get the scrollLeft value of the table element
+    //   const scrollLeft = table.scrollLeft;
+    //   // set the left position of the thead element to the negative scrollLeft value
+    //   table.querySelector("thead").style.left = `-${scrollLeft}px`;
+    // });
 
     const fadeIns = document.querySelectorAll(".fade-in");
 
