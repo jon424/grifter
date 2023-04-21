@@ -227,21 +227,46 @@
         document.title = originalTitle;
       }
     });
+    // const navLinks = document.querySelectorAll(".nav li, .mobile-nav li");
+    // navLinks.forEach((link) => {
+    //   link.addEventListener("click", (event) => {
+    //     event.preventDefault();
+    //     const targetId = event.target.innerText.toLowerCase();
+    //     const targetSection = document.getElementById(targetId);
+    //     targetSection.scrollIntoView({ behavior: "smooth" });
+    //   });
+    //   link.addEventListener("touchend", (event) => {
+    //     event.preventDefault();
+    //     const targetId = event.target.innerText.toLowerCase();
+    //     const targetSection = document.getElementById(targetId);
+    //     targetSection.scrollIntoView({ behavior: "smooth" });
+    //   });
+    // });
+
     const navLinks = document.querySelectorAll(".nav li, .mobile-nav li");
     navLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
         event.preventDefault();
         const targetId = event.target.innerText.toLowerCase();
         const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: "smooth" });
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       });
       link.addEventListener("touchend", (event) => {
         event.preventDefault();
         const targetId = event.target.innerText.toLowerCase();
         const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: "smooth" });
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       });
     });
+
     // select the table element
     // const table = document.querySelector("table");
     // // add a scroll event listener to the table element
