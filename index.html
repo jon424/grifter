@@ -51,7 +51,6 @@
       </div>
       <div id="music">
         <h2 class="fade-in">Music</h2>
-
         <iframe
           class="fade-in"
           width="560"
@@ -62,7 +61,6 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-
         <p class="fade-in">"Lullabye"</p>
         <br class="desktop-only-break fade-in" />
         <p class="fade-in">
@@ -74,7 +72,6 @@
         <br />
         <br />
         <br />
-
         <iframe
           width="560"
           height="315"
@@ -84,7 +81,6 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-
         <p class="fade-in">"Satchel Incorporated Township"</p>
         <br class="desktop-only-break fade-in" />
         <p class="fade-in">
@@ -96,7 +92,6 @@
         <br />
         <br />
         <br />
-
         <iframe
           width="560"
           height="315"
@@ -106,7 +101,6 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-
         <p class="fade-in">"Miles"</p>
         <br class="desktop-only-break fade-in" />
         <p class="fade-in">
@@ -118,7 +112,6 @@
         <br />
         <br />
         <br />
-
         <iframe
           width="560"
           height="315"
@@ -128,7 +121,6 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-
         <p class="fade-in">"UFO Spotted At South Beach"</p>
         <br class="desktop-only-break fade-in" />
         <p class="fade-in">
@@ -140,7 +132,6 @@
         <br />
         <br />
         <br />
-
         <iframe
           class="fade-in"
           width="560"
@@ -227,22 +218,6 @@
         document.title = originalTitle;
       }
     });
-    // const navLinks = document.querySelectorAll(".nav li, .mobile-nav li");
-    // navLinks.forEach((link) => {
-    //   link.addEventListener("click", (event) => {
-    //     event.preventDefault();
-    //     const targetId = event.target.innerText.toLowerCase();
-    //     const targetSection = document.getElementById(targetId);
-    //     targetSection.scrollIntoView({ behavior: "smooth" });
-    //   });
-    //   link.addEventListener("touchend", (event) => {
-    //     event.preventDefault();
-    //     const targetId = event.target.innerText.toLowerCase();
-    //     const targetSection = document.getElementById(targetId);
-    //     targetSection.scrollIntoView({ behavior: "smooth" });
-    //   });
-    // });
-
     const navLinks = document.querySelectorAll(".nav li, .mobile-nav li");
     navLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
@@ -266,7 +241,6 @@
         });
       });
     });
-
     // select the table element
     // const table = document.querySelector("table");
     // // add a scroll event listener to the table element
@@ -276,14 +250,11 @@
     //   // set the left position of the thead element to the negative scrollLeft value
     //   table.querySelector("thead").style.left = `-${scrollLeft}px`;
     // });
-
     const fadeIns = document.querySelectorAll(".fade-in");
-
     const fadeInOptions = {
       rootMargin: "0px",
       threshold: 0.25,
     };
-
     const fadeInObserver = new IntersectionObserver(function (
       entries,
       observer
@@ -299,7 +270,6 @@
       });
     },
     fadeInOptions);
-
     fadeIns.forEach((fadeIn) => {
       fadeInObserver.observe(fadeIn);
     });
