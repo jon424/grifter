@@ -28,7 +28,13 @@ body::before {
 
 h1 {
   font-size: 12rem;
-  font-family: "Shrikhand";
+  margin-bottom: 0;
+  /* font-family: "Shrikhand"; */
+  /* font-family: Helvetica; */
+  /* font-family: "Oswald"; */
+  font-family: "DM Sans";
+  font-style: italic;
+  font-weight: 700;
   text-align: center;
 }
 .mobile-title {
@@ -36,6 +42,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Lora";
   font-size: 2.75rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
 }
@@ -44,6 +51,7 @@ p {
   color: snow;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
   font-family: "Lora";
+  /* font-family: "Open Sans"; */
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0;
@@ -53,6 +61,7 @@ p {
 
 .nav,
 .mobile-nav {
+  margin-bottom: 0;
   margin-bottom: 32px;
   color: snow;
   display: flex;
@@ -151,6 +160,7 @@ td {
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
+  font-family: "Lora";
 }
 
 th:first-child,
@@ -195,7 +205,8 @@ td > a {
   }
 
   h1 {
-    font-size: 6rem;
+    margin-bottom: -26px;
+    font-size: 5rem;
   }
 
   h2 {
@@ -238,7 +249,7 @@ td > a {
   td {
     border: 1px solid snow;
     padding: 1rem 0 1rem 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   th:first-child,
@@ -273,4 +284,21 @@ td > a {
     text-stroke: 2px #000;
     -webkit-text-stroke: 2px #000;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.55s ease-in-out;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
