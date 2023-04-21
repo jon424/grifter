@@ -235,6 +235,12 @@
         const targetSection = document.getElementById(targetId);
         targetSection.scrollIntoView({ behavior: "smooth" });
       });
+      link.addEventListener("touchend", (event) => {
+        event.preventDefault();
+        const targetId = event.target.innerText.toLowerCase();
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
     });
     // select the table element
     // const table = document.querySelector("table");
