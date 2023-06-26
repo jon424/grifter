@@ -302,7 +302,7 @@
       </div>
     </div>
   </body>
-  <script>
+  <!-- <script>
     const originalTitle = document.title;
     document.addEventListener("visibilitychange", function () {
       if (document.hidden) {
@@ -366,5 +366,86 @@
     fadeIns.forEach((fadeIn) => {
       fadeInObserver.observe(fadeIn);
     });
+  </script> -->
+  <script>
+    // Function to load YouTube videos
+    function loadYouTubeVideos() {
+      const videoPlaceholders = document.querySelectorAll('.video-placeholder');
+
+      videoPlaceholders.forEach((placeholder) => {
+        const videoId = placeholder.dataset.videoId;
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = 'YouTube video player';
+        iframe.frameBorder = '0';
+        iframe.allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        placeholder.replaceWith(iframe);
+      });
+    }
+
+    // Function to handle navigation clicks
+    function handleNavigationClick(event) {
+      event.preventDefault();
+      const targetId = event.target.innerText.toLowerCase();
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+    }
+
+    // Function to handle visibility change
+    function handleVisibilityChange() {
+      const originalTitle = document.title;
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          document.title = 'G R I F T E R';
+        } else {
+          document.title = originalTitle;
+        }
+      });
+    }
+
+    // Function to handle fade-in animations
+    function handleFadeInAnimations() {
+      const fadeIns = document.querySelectorAll('.fade-in');
+      const fadeInOptions = {
+        rootMargin: '0px',
+        threshold: 0.25,
+      };
+      const fadeInObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            fadeInObserver.unobserve(entry.target);
+          }
+        });
+      }, fadeInOptions);
+      fadeIns.forEach((fadeIn) => {
+        fadeInObserver.observe(fadeIn);
+      });
+    }
+
+    // Attach event listeners and initialize the page
+    function initializePage() {
+      const navLinks = document.querySelectorAll('.nav li, .mobile-nav li');
+      navLinks.forEach((link) => {
+        link.addEventListener('click', handleNavigationClick);
+        link.addEventListener('touchend', handleNavigationClick);
+      });
+
+      handleVisibilityChange();
+      handleFadeInAnimations();
+      loadYouTubeVideos();
+    }
+
+    // Initialize the page when it has finished loading
+    window.addEventListener('load', initializePage);
   </script>
 </html>
