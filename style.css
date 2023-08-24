@@ -125,6 +125,10 @@ iframe {
   margin-bottom: 20px;
 }
 
+a:visited {
+  color: snow;
+}
+
 #contact a {
   color: #ebd66d;
   line-height: 2rem;
