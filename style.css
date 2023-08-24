@@ -103,7 +103,8 @@ p {
 #about,
 #music,
 #contact,
-#performances {
+#performances,
+#wfmu {
   align-items: center;
   display: flex;
   flex-direction: column;
