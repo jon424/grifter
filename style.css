@@ -115,6 +115,10 @@ p {
   padding-bottom: 2rem;
 }
 
+#wfmu > p {
+  align-items: flex-start;
+}
+
 hr {
   border: 1px solid snow;
   width: 50%;
