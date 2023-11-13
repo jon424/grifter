@@ -121,7 +121,8 @@ p {
 
 hr {
   border: 1px solid snow;
-  width: 50%;
+  /* width: 50%; */
+  width: 350px;
 }
 
 iframe {
