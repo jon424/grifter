@@ -16,12 +16,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            /* padding: 20px; */
             margin: 0;
             overflow-x: hidden;
             overflow-y: auto;
             position: relative;
-            padding-bottom: 80px; /* Added padding to accommodate footer */
+            /* padding-bottom: 80px; Added padding to accommodate footer */
         }
 
         body::before {
@@ -125,6 +125,82 @@
             text-decoration: underline;
         }
 
+              /* Styles for the About section */
+        #about {
+            /* margin: 0 auto; */
+            /* max-width: 1000px; */
+            padding: 20px;
+            /* border-radius: 10px; */
+            font-family: "DM Sans", sans-serif;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            color: white; /* Text color */
+          
+            width: 100%;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+        }
+
+        #about a {
+            color: snow;
+            text-decoration: underline;
+        }
+
+        #about a:hover {
+            text-decoration: underline;
+        }
+        #about-text {
+            margin: auto;
+            max-width: 500px;
+            line-height: 1.9rem;
+            padding: 0 10px;
+        }
+
+        #back-home {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: underline;
+            color: snow;
+            font-family: 'Lora';
+        }
+
+        #back-home:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+
         /* Media Query for smaller screens */
         @media (max-width: 768px) {
             h1 {
@@ -137,15 +213,16 @@
             .links a {
                 font-size: 1.4rem;
             }
+            #about {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <a class="band-name" href="./about.html">
     <div class="band-name">
         <h1>GRIFTER</h1>
     </div>
-    </a>
     <div class="card">
         <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">
             <img src="img/tfod_cover.jpg" alt="Album 1">
@@ -187,12 +264,36 @@
             <a href="https://griftertheband.bandcamp.com/" target="_blank" >Bandcamp</a>
         </div>
     </div>
+    <div id="about">
+    <div id="about-text">
+        <p>
+            Grifter is an instrumental duo from Detroit, consisting of Evan Nistor
+            on guitar, keyboard, and samples, and Jon Jackson on drums and
+            marimba. Their music is a unique blend of psychedelic rock and jazz,
+            featuring improvisational and spacey elements that create an immersive
+            and grooving sound.
+        </p>
+    
+   
+        <p>
+            Contact us at <a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a>
+        </p>
+   
+        <p>Check us out on <a href="https://www.youtube.com/@GrifterTheBand" target="_blank">YouTube</a> and
+            <a href="https://griftertheband.bandcamp.com/" target="_blank">Bandcamp</a>
+        </p>
+    
+        <p>Connect on <a href="https://www.instagram.com/griftertheband/" target="_blank">Instagram</a> and
+            <a href="https://www.facebook.com/people/Grifter/100091641446890/" target="_blank">Facebook</a>
+        </p>
+    </div>
+    </div>
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <ul>
             <li><a href="./about.html">About</a></li>
         </ul>
-    </footer>
+    </footer> -->
     <script>
         // Fade in the h1 when the page loads
         window.onload = function() {
