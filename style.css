@@ -29,14 +29,16 @@ body::before {
 h1 {
   font-size: 12rem;
   margin-bottom: 0;
-  /* font-family: "Shrikhand"; */
-  /* font-family: Helvetica; */
-  /* font-family: "Oswald"; */
   font-family: "DM Sans";
   font-style: italic;
   font-weight: 700;
   text-align: center;
 }
+.band-name {
+  text-decoration: none; /* Remove underline */
+  color: white !important; /* Set color to white */
+}
+
 .mobile-title {
   display: none;
 }
