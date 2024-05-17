@@ -228,29 +228,26 @@
         </div>
     </div>
     <script>
-        // Fade in the h1 when the page loads
         window.onload = function () {
-            var h1 = document.querySelector('h1');
-            h1.style.opacity = 1;
-        };
+        // Fade in the h1 when the page loads
+        var h1 = document.querySelector('h1');
+        h1.style.opacity = 1;
 
-               // Preload images
-               function preloadImages() {
-            var images = [
-                "img/tfod_cover.jpg",
-                "img/iawb_cover.jpg",
-                "img/self-titled_cover.jpg",
-                "img/satchel_cover.jpg",
-                "img/miles_cover.jpg",
-                "img/ufo_cover.jpg",
-                "img/lullabye_cover.jpg",
-            ];
-            for (var i = 0; i < images.length; i++) {
-                var img = new Image();
-                img.src = images[i];
-            }
+        // Preload images
+        var images = [
+            "img/tfod_cover.jpg",
+            "img/iawb_cover.jpg",
+            "img/self-titled_cover.jpg",
+            "img/satchel_cover.jpg",
+            "img/miles_cover.jpg",
+            "img/ufo_cover.jpg",
+            "img/lullabye_cover.jpg",
+        ];
+        for (var i = 0; i < images.length; i++) {
+            var img = new Image();
+            img.src = images[i];
         }
-        window.onload = preloadImages;
+    };
     </script>
 </body>
 </html>
